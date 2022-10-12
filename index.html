@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body background="img/bg.jpg">
+    <div id="scene">
+        <div id="bdiv">
+            <button onclick="start()" id="btn" class="dabba1" style="color:white;">Speed up</button>
+            <button onclick="stop()" id="btn" class="dabba2" style="color: white;">Speed down</button>
+        </div>
+    </div>
+
+    <marquee direction="right" scrollamount="8" id="im">
+      <img src="img/a.gif" class="pic1" alt="" width="22%">&emsp;&emsp;&emsp;
+      <img src="img/b.gif" class="pic2" alt="" width="11%">&emsp;&emsp;
+      <img src="img/c.gif" class="pic3" alt="" width="4%">&numsp;;
+  
+    </marquee>
+    <script>
+        var x;
+    var m=0;
+    function start()
+    {
+     x=setInterval(anim,50);
+     
+      function anim()
+      {
+          
+          console.log(m);
+            if(m==1200)
+            {
+                clearInterval(x);           
+                m=0;
+            }
+            
+            else
+            {
+                m=m+5;
+                document.getElementById("im").style.visibility="visible";
+                var target=document.getElementById("im");
+                target.style.marginLeft=m+'px';
+            }
+       }
+    
+    }
+    
+    function stop()
+    {
+        clearInterval(x)
+    }
+    </script>
+</body>
+</html>

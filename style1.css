@@ -1,0 +1,33 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#scene{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 450px;
+    }
+    #bdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+        }
+        .dabba1{
+            background-color: rgb(209, 16, 16);
+            width: 10%;
+            word-spacing: 0%;
+            height: 10%;
+            margin-bottom: 10%;
+        }
+        .dabba2{
+            background-color: rgb(236, 20, 20);
+            margin-bottom: 10%;
+            width: 10%;
+        }
+        .pic1{
+            position: relative; 
+            top: 10%; 
+        }
